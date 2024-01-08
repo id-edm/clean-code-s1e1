@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.description-img {
+.desciption__img {
   width: 100%;
 }
 
-.more-info {
+.desciption__link {
   font-family: fantasy, cursive;
 }
 
@@ -26,7 +26,7 @@
   }
 }
 
-.box-app {
+.container__app {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -38,7 +38,7 @@
   flex-grow: 1;
 }
 
-.task-row {
+.task__new {
   display: flex;
 }
 
@@ -47,13 +47,13 @@
   padding: 0px;
 }
 
-li, 
-h3 {
+.list__item, 
+.title-section {
   list-style: none;
 }
 
-input,
-button {
+.list__item-checkbox,
+.btn {
   outline: none;
 }
 
@@ -72,8 +72,8 @@ button {
 }
 
 /* Heading */
-.title,
-.title-add {
+.title-section,
+.task__add-title{
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -83,7 +83,8 @@ button {
   text-transform: uppercase;
 }
 
-.task-text {
+.list__item-input,
+.task__add-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -96,22 +97,23 @@ button {
   color: #888;
 }
 
-.task-text:focus {
+.task__add-input:focus,
+.list__item-input:focus {
   color: #333;
 }
 
 /* New Task */
-.title-add {
+.task__add-title {
   display: block;
   margin: 0 0 20px;
 }
 
-#task-row-entry {
+#new-task {
   width: 318px;
 }
 
 /* Task list */
-.box-task {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -120,51 +122,51 @@ button {
   align-items: center;
 }
 
-.box-task > * {
+.list__item > * {
   vertical-align: middle;
 }
 
-.task-checkbox {
+.list__item-checkbox {
   margin: 0 10px;
 }
 
-.task-label {
+.list__item-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-text {
+.list__item-input {
   width: 226px;
 }
 
-.delete-img {
+.btn__img-delete {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete-img:hover {
+.btn__img-delete:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .task-label {
+.completed__list .list__item-label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.box-task .task-text {
+.list__item .list__item-input {
   display: none;
 }
 
-.box-task.edit-mode .task-text {
+.list__item.edit__mode .list__item-input {
   display: inline-block;
   width: 224px;
 }
 
-.box-task.edit-mode .task-label {
+.list__item.edit__mode .list__item-label {
   display :none;
 }
